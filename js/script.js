@@ -30,10 +30,32 @@
 // Hint: Arrayet bruger [ ], hvert objekt bruger { }.
 // Husk komma mellem objekterne, og stav propertynavnene præcist.
 // ✏️ Skriv dit array her ↓
+const fruits=[
+    {name: "Apple",
+    emoji: "🍎",
+    color: "Red"
+    },
+    {name: "Banana",
+    emoji: "🍌",
+    color: "Yellow"
+    },
+    {name: "Orange",
+    emoji: "🍊",
+    color:"Orange"
+    },
+    {name: "Strawberry",
+    emoji: "🍓",
+    color: "red"
+    },
+    {name: "Kiwi", 
+    emoji:"🥝",
+    color: "Green"
+    }
+]
 
 
 // 💬 Forklar forskellen mellem et array og et objekt.
-
+// Array er en listen og objekter er de ting der vises i et array
 // ------------------------------------------------------------
 // STEP 2: Hent elementer fra HTML
 // ------------------------------------------------------------
@@ -47,7 +69,9 @@
 //
 // ✏️ Skriv dine tre variabler her ↓
 
-
+const fruitListElement= document.getElementById("fruit-list")
+const toggleButtonElement= document.getElementById("toggle-fruits")
+const statusMessageElement= document.getElementById("status-message")
 // ------------------------------------------------------------
 // STEP 3: Byg frugtlisten med forEach og template literals
 // ------------------------------------------------------------
@@ -69,7 +93,9 @@
 // Hint: En template literal bruger backticks (`) og ${...}.
 //       += bevarer de elementer, du allerede har indsat.
 // ✏️ Skriv din forEach og template literal her ↓
-
+fruits.forEach(function (fruit){
+    console.log(fruit);
+})
 
 // 💬 Hvorfor bruger vi += og ikke kun =?
 
