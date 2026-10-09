@@ -96,6 +96,7 @@ const statusMessageElement= document.getElementById("status-message")
 fruits.forEach(function (fruit){
     console.log(fruit);
 })
+fruitListElement.innerHTML+=
 
 // 💬 Hvorfor bruger vi += og ikke kun =?
 
